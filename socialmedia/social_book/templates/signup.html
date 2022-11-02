@@ -48,7 +48,7 @@
 
         <div>
             <div class="lg:p-12 max-w-md max-w-xl lg:my-0 my-12 mx-auto p-6 space-y-">
-                <h1 class="lg:text-3xl text-xl font-semibold mb-6"> Sign up</h1>
+                <h1 class="lg:text-3xl text-xl text-white font-semibold mb-6"> Sign up</h1>
                 <!--<p class="mb-2 text-black text-lg"> Register to manage your account </p>-->
                 
                 <div>
@@ -65,10 +65,7 @@
                 
                 <form action="" method="POST">
                     {% csrf_token %}
-                    <!--<div class="flex lg:flex-row flex-col lg:space-x-2">
-                        <input type="text" placeholder="First Name"  class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
-                        <input type="text" placeholder="Last Name" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
-                    </div>-->
+                    
                     <input type="text" name="username" placeholder="Username" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
                     <input type="password" name="password" placeholder="Password" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
                     <input type="password" name="confirm_password" placeholder="Confirm Password" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
@@ -82,7 +79,7 @@
                     </div>
                     <button type="submit" class="bg-gradient-to-br from-pink-500 py-3 rounded-md text-white text-xl to-red-400 w-full">Sign Up</button>
                     <div class="text-center mt-5 space-x-2">
-                        <p class="text-base"> Do you have an account? <a href="/signin"> Sign in </a></p>
+                        <p class="text-base text-white"> Do you have an account? <a href="/signin"> Sign in </a></p>
                     </div>
                 </form>
             </div>

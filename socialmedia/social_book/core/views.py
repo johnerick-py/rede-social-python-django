@@ -94,8 +94,7 @@ def search(request):
         username_profile_list = list(chain(*username_profile_list))
     return render(request, 'search.html', {'user_profile': user_profile, 'username_profile_list': username_profile_list})
 
-    
- 
+     
 @login_required(login_url='signin') 
 def profile(request, pk):
     user_object = User.objects.get(username=pk)

@@ -30,7 +30,7 @@
 				<form action="/follow" method="POST">
 					{% csrf_token %}
 					<div class="add-btn">
-					<span style="color: white; font-size: 27px; margin-right: 520px;"><b><u><a href="/">Home</a></u></b></span>
+					<span style="color: white; font-size: 27px; "><b><a href="/">Home</a></b></span>
 					
 					{% if user_post_length == 0 %}
 					<span style="color: white; font-size: 27px;"><b>No Post</b></span>
@@ -61,13 +61,7 @@
 					</div>
 				</form>
 
-				<!-- <form class="edit-phto">
-					<i class="fa fa-camera-retro"></i>
-					<label class="fileContainer">
-						Upload Cover Photo
-					<input type="file"/>
-					</label>
-				</form> -->
+				
 				<div class="container-fluid">
 					<div class="row merged">
 						<div class="col-lg-2 col-sm-3">
@@ -87,24 +81,10 @@
 							<div class="timeline-info">
 								<ul>
 									<li class="admin-name">
-									  <h5 style="color: black;white-space: nowrap; width: 110px; font-size: 27px;"><b>@{{user_profile.user.username}}</b><!--<i class="fa fa-check-circle" style="color: #48dbfb;" aria-hidden="true"></i>--></h5>
-									  <!--<span>Group Admin</span>-->
+									  <h5 style="color: white;white-space: nowrap; width: 110px; font-size: 27px;"><b>@{{user_profile.user.username}}</b><!--<i class="fa fa-check-circle" style="color: #48dbfb;" aria-hidden="true"></i>--></h5>
+									 
 									</li>
-									<!--<li>
-										<a class="" href="javascript:void(0)" title="" data-ripple="">Go live!</a>
-										<a class="" href="javascript:void(0)" title="" data-ripple="">Music</a>
-										<a class="" href="emporium/index-3.html" title="" data-ripple="">Emporium</a>
-										<a class="" href="fitness/index.html" title="" data-ripple="">Health Inspection</a>
-										<a class="" href="settings/account-setting.html" title="" data-ripple="">Settings</a>
-										<a class="" href="javascript:void(0)" title="" data-ripple="">Upload</a>
-										<a class="" href="time-line.html" title="" data-ripple="">time line</a>
-										<a class="" href="timeline-photos.html" title="" data-ripple="">Photos</a>
-										<a class="" href="timeline-videos.html" title="" data-ripple="">Videos</a>
-										<a class="" href="timeline-friends.html" title="" data-ripple="">Friends</a>
-										<a class="" href="timeline-groups.html" title="" data-ripple="">Groups</a>
-										<a class="" href="about.html" title="" data-ripple="">about</a>
-										<a class="" href="#" title="" data-ripple="">more</a>
-									</li>-->
+									
 								</ul>
 							</div>
 						</div>
@@ -113,13 +93,14 @@
 			</div>
 		</section><!-- top area -->
 		<section>
-			<div class="bio">
+			{% comment %} <div class="bio">
 					{{user_profile.bio}}
-			</div>
+			</div> {% endcomment %}
+			
 		</section>
 		
 	<section>
-		<div class="gap gray-bg">
+		<div class="gap black-bg">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-12">
@@ -132,13 +113,6 @@
 								</aside>
 							</div><!-- sidebar -->
 							
-
-
-
-
-
-
-
 
 
 							<div class="col-lg-6">
