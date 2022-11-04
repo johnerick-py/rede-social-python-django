@@ -27,7 +27,7 @@ Você precisará instalar todas as dependências para executar:
 
 1.  Python 3.7.10+
 2. `git clone https://github.com/johnerick-py/rede-social-python-django.git`
-3. `pip install django`
+3. `pip install Django`
 4. `pip install Pillow`
 
 ## Como rodar o app
