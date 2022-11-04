@@ -3,60 +3,54 @@
 </div>
 
 <div align="center">
-  <img height='20' src='https://img.shields.io/github/stars/gabrielcordeiro2/Hospital-query-system.svg' />
+  <img height='20' src='https://img.shields.io/github/stars/johnerick-py/rede-social-python-django.svg' />
   <img height='20' src='https://img.shields.io/badge/License-MIT-red.svg' />
-  <img height='20' src='https://img.shields.io/github/forks/gabrielcordeiro2/Hospital-query-system.svg' />
+  <img height='20' src='https://img.shields.io/github/forks/johnerick-py/rede-social-python-django.svg' />
 
-  [<img height='25' src='https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=blue' alt='linkedin'>](https://www.linkedin.com/in/gabrielcdev/)
-  [<img height='25' src='https://img.shields.io/badge/Instagram-000?style=for-the-badge&logo=instagram&logoColor=#615352' alt='instagram'>](https://www.instagram.com/krd.gabriel/)
+  [<img height='25' src='https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=blue' alt='linkedin'>](https://www.linkedin.com/in/johnerick-py/)
+  
 
-I made a Hospital query system, which manages general tasks that occur in daily work of a front desk attendant.
+ Criei uma rede social que simula algumas das funções das redes sociais mais famosas por exemplo: criar contas, excluir, seguir, perfil...
 
   <img src="https://user-images.githubusercontent.com/100642061/194762368-dee83608-0a76-4dae-86c2-d0d0e70174e9.png" height="100px" width="720px" />
 </div>
 
-## The idea:
+## A Ideia:
 
-I wanted to challenge myself to do a different type of portfolio project, as I learned about the Backend, I was curious about how the systems that served me on a day-to-day basis worked, and from that came the idea of making a hospital system.
+Queria me desafiar a fazer um tipo diferente de projeto de portfólio, conforme aprendi sobre o Backend, fiquei curioso sobre como funcionavam os sistemas que me serviam no dia a dia, e daí surgiu a ideia de fazer algo parecido com alguma rede social.
 
 
-## Requirements to run:
-You will need to install all dependencies to run:
+## Como rodar este projeto:
+Você precisará instalar todas as dependências para executar:
 
-### for Python:
+### No Python:
 
-1.  Python 3.8.10+
-2. `git clone https://github.com/gabrielcordeiro2/Hospital-query-system`
-3. `pip3 install -r requirements.txt`
+1.  Python 3.7.10+
+2. `git clone https://github.com/johnerick-py/rede-social-python-django.git`
+3. `pip install django`
+4. `pip install Pillow`
 
-### for Database:
+## Como rodar o app
 
-1.  PostgreSQL
-2.  postgres empty database called as `postgres` with port `5432`
-3.  `.env` file created inside project, containing `DATABASE_URI=postgresql://postgres:123@localhost:5432/postgres`
+- `python manage.py runserver`
 
-## How to use
+## Habilidades que aprendi:
 
-- You can found my documentation [here](https://documenter.getpostman.com/view/21448782/2s83ziMiKD).
-- Run `src/api/app.py` to start API Server.
-- All endpoint methods, except `/login` needs a JWT Token to use.
+- **Django**
 
-## Skills that i learned:
+  padrão de projeto django, requests, models no django, autenticações de formularios com csrf_token
 
-- **Database manage**
-
-  Using: PostgreSQL, SQLAlchemy (ORM), Database modeling (UML Diagram).
-
-- **Python Backend development**
+- **Python Backend**
   
-  Using: Flask, REST Apis, JWT Auth, MVC like.
+  Using: Django, requests, csrf_token Auth.
+  O Django utiliza uma arquitetura nomeada Model View Template, que é bem semelhante da já conhecida MVC. 
 
-- **Rest API Documentation**
-  
-  Using: Postman and ThunderClient.
   
   
-| UML Database diagram |
+| Login |
 |:--:|
-|![space-1.jpg](https://user-images.githubusercontent.com/100642061/194748406-81511f29-45a6-4654-af31-9c6cc565457d.png)|
-I made this UML diagram using [LucidApp](https://lucid.app/documents#/dashboard).
+|![space-1.jpg](https://user-images.githubusercontent.com/63692868/199891749-d70f38d4-c957-4097-a061-e1e79818d7dd.png)|
+| Cadastro |
+|:--:|
+|![space-1.jpg](https://user-images.githubusercontent.com/63692868/199892250-9569c017-d755-4823-9279-7e889c833b73.png)|
+
